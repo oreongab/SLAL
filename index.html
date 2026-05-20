@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TrafficOS | Traffic Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="เมนูหลัก Main navigation">
+        <div class="brand">
+          <span class="brand-icon" aria-hidden="true">
+            <i class="fa-solid fa-traffic-light"></i>
+          </span>
+          <span class="brand-name">TrafficOS</span>
+        </div>
+
+        <nav class="nav" id="sidebarNav" aria-label="TrafficOS pages"></nav>
+
+        <div class="sidebar-footer">
+          <button class="nav-item utility-link" type="button">
+            <span class="nav-icon" data-icon="settings"></span>
+            <span class="nav-copy">
+              <span>ตั้งค่า</span>
+              <small>Settings</small>
+            </span>
+          </button>
+          <div class="profile-mini" aria-label="ข้อมูลผู้ใช้ User profile">
+            <div class="avatar">AO</div>
+            <div class="profile-copy">
+              <strong>ศูนย์ควบคุม</strong>
+              <span>Traffic Control</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-group">
+            <p id="pageEyebrow">Dashboard</p>
+            <h1 id="pageTitle">แดชบอร์ด</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button notification-button" type="button" aria-label="การแจ้งเตือน Notifications">
+              <span data-icon="bell"></span>
+              <span class="notification-dot"></span>
+            </button>
+            <div class="user-avatar" aria-label="ผู้ใช้ Admin Operator">AO</div>
+          </div>
+        </header>
+
+        <section class="content" id="pageContent" aria-live="polite"></section>
+      </main>
+    </div>
+  </body>
+</html>
